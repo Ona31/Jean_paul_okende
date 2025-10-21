@@ -87,3 +87,103 @@ ul li a:hover{
 .links .wts:hover{
     background-color: var(--prim);
 }
+
+
+
+.linkss{
+    display: none;
+}
+
+ .menu-toggle{
+    display: none;
+ }
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  #header {
+    padding: 1rem 2rem;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  /* Cacher la navigation de base */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--bgblur);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    z-index: 999;
+  }
+
+  /* Quand le menu est actif (via une classe JS) */
+  nav ul.active {
+    display: flex;
+  }
+
+  ul li a {
+    font-size: 1.1rem;
+  }
+
+  .links {
+    display:none; /* cacher les liens CV/WhatsApp dans le header sur mobile */
+  }
+
+  /* Bouton burger */
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: var(--text);
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+.linkss{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.linkss .cv{
+    border: 1px solid var(--prim);
+    background-color: var(--prim);
+    transition: .3s ease-in-out;
+    color: azure;
+    padding: .5rem 1rem ;
+
+
+}
+
+.linkss a i{
+    margin-right: 0.5rem;
+}
+.linkss a:hover{
+    background-color: transparent;
+}
+
+.linkss .wts{
+    border: 1px solid var(--prim);
+    transition: .3s ease-in-out;
+    color: azure;
+    padding: .5rem 1rem ;
+
+
+}
+.linkss .wts:hover{
+    background-color: var(--prim);
+}
+
+  /* Par défaut, le bouton burger est caché sur desktop */
+  @media (min-width: 769px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+}

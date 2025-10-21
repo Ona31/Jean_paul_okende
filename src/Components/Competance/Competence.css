@@ -73,3 +73,53 @@
     text-align: center;
     margin: 1rem 0;
 }
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  #Competence {
+    height: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  #Competence h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #Competence .comp_partie {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .comp_partie .card_comp {
+    width: 100%;
+    max-width: 20rem;
+    padding: 1.2rem;
+  }
+
+  .card_comp::after {
+    width: 10rem;
+    height: 10rem;
+    border-top: 8px solid var(--prim);
+    border-left: 8px solid var(--prim);
+    top: -0.5rem;
+    left: -0.5rem;
+  }
+
+  .t_card i {
+    font-size: 2rem;
+    margin: 0.8rem 0;
+  }
+
+  .card_comp .t_card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card_comp p {
+    font-size: 0.95rem;
+    margin: 0.8rem 0;
+  }
+}
+

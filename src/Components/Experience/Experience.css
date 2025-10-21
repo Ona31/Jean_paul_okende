@@ -1,48 +1,97 @@
-#Experiences{
-    background-color: var(--sec);
-    width: 100%;
-    height: 100vh;
-    padding: 6rem 10rem;
-    justify-items: center;
+#Experiences {
+  background-color: var(--sec);
+  width: 100%;
+  padding: 6rem 10rem;
 }
 
-#Experiences h2{
-    color: var(--text);
-    border-bottom: 1.5px solid var(--prim);
-    margin-bottom: 2rem ;
+#Experiences h2 {
+  color: var(--text);
+  border-bottom: 1.5px solid var(--prim);
+  margin-bottom: 2rem;
+  text-align: center;
 }
-.experiences_partie{
-    display: flex;
-    gap: 4rem;
-    margin: 2rem 0;
-}
-.experiences_partie .content_card{
-    display: flex;
-    background-color: var(--secp);
-    padding: 3rem;
-    gap: 2rem;
-    align-items: center;
-}
-.content_card .head{
-    padding: 1rem;
-}
-.head h4,h5 ,span{
-    color: var(--text);
-    margin: 1rem 0;
 
+.experiences_partie {
+  display: flex;
+  flex-wrap: wrap; /* permet aux cartes de passer à la ligne */
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
 }
-.head h4{
-    font-size: 2rem;
-}
-.head span{
 
+.content_card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secp);
+  padding: 2rem;
+  gap: 1.5rem;
+  width: calc(50% - 2rem); /* 2 cartes par ligne */
+  min-width: 280px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-.resp{
-    display: flex;
+
+.head h4, .head h5, .head span {
+  color: var(--text);
+  margin: 0.5rem 0;
 }
-.resp p{
-    color: var(--text);
-    background-color: var(--primp);
-    padding: 1rem;
-    font-weight: 400;
+
+.head h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.head h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.head span {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.resp ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.resp li {
+  color: var(--text);
+  background-color: var(--primp);
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .content_card {
+    width: calc(50% - 1.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  #Experiences {
+    padding: 4rem 2rem;
+  }
+
+  .content_card {
+    width: 100%; /* une carte par ligne sur mobile */
+  }
+
+  .head h4 {
+    font-size: 1.3rem;
+  }
+
+  .head h5 {
+    font-size: 1.1rem;
+  }
+
+  .head span {
+    font-size: 0.95rem;
+  }
 }

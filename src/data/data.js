@@ -28,11 +28,9 @@ export const competences = [
   }
 ];
 
-
-
 export const experiences = [
   {
-    company: "Kamoa_Copper S.A (Ivanhoe Mines)",
+    company: "Kamoa Copper S.A (Ivanhoe Mines)",
     title: "Senior Plant Mechanical (Maintenance / Engineering)",
     start: "Janvier 2022",
     end: "Présent",
@@ -50,7 +48,27 @@ export const experiences = [
     responsibilities: [
       "Entretien et réparation des équipements mécaniques industriels.",
       "Vulcanisation et alignement des convoyeurs.",
-      "Amélioration de la disponibilité des installations grâce à des actions de maintenance ciblées."
+      "Amélioration de la disponibilité des installations par des actions de maintenance ciblées."
+    ]
+  },
+  {
+    company: "Boss Mining S.p.r.l (ERG)",
+    title: "Chef de section mécanique usine hydrométallurgique",
+    start: "Février 2007",
+    end: "Mars 2014",
+    responsibilities: [
+      "Encadrement de l’atelier mécanique (pompes volumétriques et non volumétriques).",
+      "Chef de section mécanique EW (Électrolyse cuivre).",
+      "Dépannage et maintenance des broyeurs humides (Ball Mill)."
+    ]
+  },
+  {
+    company: "La Générale des Carrières et des Mines (GCM)",
+    title: "Stage maintenance concentrateur",
+    start: "Juillet 2006",
+    end: "Décembre 2006",
+    responsibilities: [
+      "Stage pratique en maintenance concentrateur."
     ]
   }
 ];

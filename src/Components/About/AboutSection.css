@@ -75,3 +75,74 @@
 ol li {
     color: var(--prim);
 }
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  #About {
+    height: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  #About h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .content .img {
+    justify-content: center;
+  }
+
+  .img img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .img::after {
+    width: 15rem;
+    height: 15rem;
+    left: 3rem;
+    top: 3rem;
+  }
+
+  .img .hr_tl {
+    width: 3rem;
+    height: 3rem;
+    left: -1rem;
+    top: -1rem;
+  }
+
+  .content .text {
+    width: 100%;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+  }
+
+  .text p strong {
+    font-size: 1.3rem;
+  }
+
+  .text .card_text {
+    padding: 1.5rem;
+  }
+
+  .card_text h4 {
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+  }
+
+  .card_text ol {
+    padding: 0.5rem;
+  }
+
+  ol li {
+    font-size: 0.95rem;
+  }
+}

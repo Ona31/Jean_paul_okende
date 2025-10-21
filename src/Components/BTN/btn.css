@@ -1,0 +1,21 @@
+.developer-badge {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--prim);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.developer-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}

@@ -9,10 +9,24 @@ export default function Hero(){
             je suis spécialisé dans la maintenance des équipements mécaniques industriels depuis plus de 15 ans.
                 Mon objectif 
                   est de mettre mon expertise au service de la performance, de la fiabilité et de la sécurité des installations industrielles.</p>
-                       <div className="links">
-                <a href="" className="cv"><i class="fa-solid fa-regular fa-download"></i>Telecharger CV</a>
-                <a href="" className="wts"><i class="fa-brands fa- fa-whatsapp"></i>Whatsapp</a>
-            </div>
+                     <div className="linkss">
+        <a href="#" className="cv">
+          <i className="fa-solid fa-download"></i> Télécharger CV
+        </a>
+        <a href="#" className="wts">
+          <i className="fa-brands fa-whatsapp"></i> Whatsapp
+        </a>
+      </div>
+      
+      <div className="links">
+        <a  href="/cv/CV_JeanPaul_Okende_International_FR_Modern.pdf" 
+  download className="cv">
+          <i className="fa-solid fa-download"></i> Télécharger CV
+        </a>
+        <a href="https://wa.me/243976508811" target="_blank" className="wts">
+          <i className="fa-brands fa-whatsapp"></i> Whatsapp
+        </a>
+      </div>
       </section>
     )
 }
