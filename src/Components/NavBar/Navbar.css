@@ -138,12 +138,14 @@ ul li a:hover{
 
   /* Bouton burger */
   .menu-toggle {
-    display: block;
+    display: flex;
     font-size: 2rem;
     color: var(--text);
     cursor: pointer;
     z-index: 1001;
   }
+
+  
   
 .linkss{
     display: flex;
