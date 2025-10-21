@@ -1,0 +1,26 @@
+
+
+/* main App css*/
+.container{
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url("./assets/IMG-20251002-WA0124.jpg");
+  background-size: cover;
+
+}
+.container::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgblur);
+  backdrop-filter: blur(5px);
+}
+
+.container .main{
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}

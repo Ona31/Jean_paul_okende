@@ -1,0 +1,77 @@
+
+#About{
+    background-color: var(--sec);
+    width: 100%;
+    height: 100vh;
+    padding: 6rem 10rem;
+    justify-items: center;
+}
+
+#About h2{
+    color: var(--text);
+    border-bottom: 1.5px solid var(--prim);
+    margin-bottom: 2rem ;
+}
+.content{
+    display: flex;
+    gap: 7rem;
+}
+
+.content .img{
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.img::after{
+    position: absolute;
+    content: "";
+    width: 23rem;
+    height: 23rem;
+    background-color: var(--prim);
+    z-index: -2;
+    left: 7rem;
+    top: 7rem;
+}
+.img .hr_tl{
+    width: 5rem;
+    height: 6rem;
+    position: absolute;
+    background-color: transparent;
+    left: -2rem;
+    top: -2rem;
+    border-top: 1px solid var(--prim);
+    border-left: 1px solid var(--prim);
+}
+.img img{
+    width: 28rem;
+    height: 28rem;
+}
+.content .text{
+    display: block;
+}
+.text p{
+    color: var(--text);
+    margin: 1rem 0;
+}
+.text p strong {
+    color: var(--prim);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.text .card_text{
+    background-color: var(--secp);
+    padding: 2rem;
+}
+.card_text h4{
+    color: var(--text);
+    background-color: var(--primp);
+    padding: .5rem;
+    margin: 1rem 0;
+
+}
+.card_text ol{
+ padding: 1rem;
+}
+ol li {
+    color: var(--prim);
+}

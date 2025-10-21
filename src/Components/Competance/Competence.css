@@ -1,0 +1,75 @@
+
+#Competence{
+    background-color: var(--secp);
+    width: 100%;
+    height: 100vh;
+    padding: 6rem 10rem;
+    justify-items: center;
+}
+
+#Competence h2{
+    color: var(--text);
+    border-bottom: 1.5px solid var(--prim);
+    margin-bottom: 2rem ;
+}
+
+#Competence  .comp_partie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* wrap automatique */
+    gap: 2rem;
+    margin: 3rem 0;
+    justify-items: center; /* centre les cartes si espace restant */
+    width: 100%;
+}
+
+.comp_partie .card_comp {
+    background-color: var(--sec);
+    padding: 1.5rem;
+    border-radius: 2px;
+    position: relative;  /* nécessaire pour ::before */
+    z-index: 1;          /* toujours au-dessus du pseudo-élément */
+    width: 18rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol */
+.card_comp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Pseudo-élément décoratif derrière la carte */
+.card_comp::after {
+    content: "";
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-top: 11px solid var(--prim);
+    border-left: 11px solid var(--prim);
+
+    top: -1rem;
+    left: -1rem;
+    opacity: 0.2;        /* subtil et léger */
+    z-index: -2;          /* derrière le contenu de la carte */
+}
+.card_comp .t_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.t_card i{
+    color: var(--text);
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.card_comp .t_card h3{
+    color: var(--prim);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.card_comp p{
+    color: var(--text);
+    text-align: center;
+    margin: 1rem 0;
+}
