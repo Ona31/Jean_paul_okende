@@ -8,6 +8,12 @@
   --bgblur : #171717a3;
 }
 
+body{
+  min-height: 100vh;
+    background-image: url("./assets/IMG-20251002-WA0124.jpg");
+    
+  background-size: cover;
+}
 *{
   margin: 0;
   padding: 0;

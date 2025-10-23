@@ -106,8 +106,8 @@ ol li {
   .img::after {
     width: 15rem;
     height: 15rem;
-    left: 3rem;
-    top: 3rem;
+    left: 5rem;
+    top: 5rem;
   }
 
   .img .hr_tl {

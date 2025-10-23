@@ -1,5 +1,5 @@
 import "./AboutSection.css";
-import profile from "../../assets/IMG-20251002-WA0126.jpg";
+import profile from "../../assets/Sans titre-2.png";
 
 export default function About() {
   return (

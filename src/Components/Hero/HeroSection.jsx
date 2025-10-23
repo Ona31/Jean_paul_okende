@@ -1,10 +1,12 @@
 import "./HeroSection.css"
+import img from '../../assets/Sans titre-1.png';
 
 
 export default function Hero(){
     return(
       <section id="Hero">
-         <h1>Jean-Paul <br /> Okende Kaleo</h1>
+        <div className="text-hero">
+           <h1>Jean-Paul <br /> Okende Kaleo</h1>
          <p>Basé à Kolwezi en République Démocratique du Congo, 
             je suis spécialisé dans la maintenance des équipements mécaniques industriels depuis plus de 15 ans.
                 Mon objectif 
@@ -27,6 +29,11 @@ export default function Hero(){
           <i className="fa-brands fa-whatsapp"></i> Whatsapp
         </a>
       </div>
+        </div>
+        <div className="img-hero">
+          <img src={img} alt="profile" />
+        </div>
+        
       </section>
     )
 }
